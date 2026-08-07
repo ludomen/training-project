@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+@mixin flexbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header{
+    width: 100%;
+    border: 1px solid black;
+    @include flexbox;
+    &__list{
+       @include flexbox;
+       column-gap: 20px;
+       list-style: none;
+    }
+}
